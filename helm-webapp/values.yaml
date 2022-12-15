@@ -1,0 +1,12 @@
+appName: myhelmapp
+
+port: 80
+
+configmap:
+  name: myhelmapp-configmap-v1
+  data:
+    CUSTOM_HEADER: 'This app was deployed with helm!'
+
+image:
+  name: devopsjourney1/mywebapp
+  tag: latest
