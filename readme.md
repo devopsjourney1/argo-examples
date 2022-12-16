@@ -29,6 +29,7 @@ argocd login 127.0.0.1:8080
 ```
 
 # Command Cheat sheet
+```
 `argocd app create` Create a new Argo CD application.
 `argocd app list` List all applications in Argo CD.
 `argocd app logs <appname>` Get the application’s log output.
@@ -39,7 +40,7 @@ argocd login 127.0.0.1:8080
 `argocd app rollback <appname>` Rollback to a previous version
 `argocd app set <appname>` Set the application’s configuration.
 `argocd app delete <appname>` Delete an Argo CD application.
-
+```
 
 # Example Commands:
 argocd app list
