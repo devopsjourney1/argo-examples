@@ -1,10 +1,10 @@
 
 
-# Install argo cd via helm
-link to youtube video...
+# Follow this video to be a ArgoCD Boss
+https://youtu.be/JLrR9RV9AFA
 
-# Access
-### Get instructions
+
+# Installing latest/stable version of ArgoCD
 ```
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
@@ -28,6 +28,14 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 argocd login 127.0.0.1:8080
 ```
 
+# Creating an Application using ArgoCD CLI:
+```
+argocd app create webapp-kustom-prod \
+--repo https://github.com/devopsjourney1/argo-examples.git \
+--path kustom-webapp/overlays/prod --dest-server https://kubernetes.default.svc \
+--dest-namespace prod
+```
+
 # Command Cheat sheet
 ```
 argocd app create #Create a new Argo CD application.
@@ -42,19 +50,6 @@ argocd app set <appname> #Set the application’s configuration.
 argocd app delete <appname> #Delete an Argo CD application.
 ```
 
-# Example Commands:
-argocd app list
-```
-argocd app create webapp-kustom-prod \
---repo https://github.com/devopsjourney1/argo-examples.git \
---path kustom-webapp/overlays/prod --dest-server https://kubernetes.default.svc \
---dest-namespace prod
-```
-
-
-
-## Get started
-https://argo-cd.readthedocs.io/en/stable/getting_started/
 
 
 
