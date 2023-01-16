@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 1
   template:
-    spec: # Pod spec leadblacktech
+    spec: # Pod spec
       containers:
       - name: mycontainer
         image: "devopsjourney1/mywebapp:latest"
