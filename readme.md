@@ -1,9 +1,3 @@
-
-
-# Follow this video to be a ArgoCD Boss
-https://youtu.be/JLrR9RV9AFA
-
-
 # Installing latest/stable version of ArgoCD
 ```
 kubectl create namespace argocd
