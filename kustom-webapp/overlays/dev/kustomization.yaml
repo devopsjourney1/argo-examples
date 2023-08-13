@@ -1,7 +1,7 @@
 bases:
 - ../../base
 
-patches:
+patchesStrategicMerge:
  - replicas.yaml
 
 configMapGenerator:
