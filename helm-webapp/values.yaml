@@ -1,4 +1,4 @@
-appName: myhelmapp
+appName: weatherapp
 
 port: 3000
 
