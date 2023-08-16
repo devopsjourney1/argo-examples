@@ -3,7 +3,7 @@ appName: weatherapp
 port: 3000
 
 configmap:
-  name: myhelmapp-configmap-v1
+  name: weatherapp-configmap-v1
   data:
     CUSTOM_HEADER: 'This app was deployed with helm!'
 
