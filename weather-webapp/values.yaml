@@ -1,12 +1,12 @@
-appName: myhelmapp
+appName: weatherapp
 
-port: 80
+port: 3000
 
 configmap:
-  name: myhelmapp-configmap-v1
+  name: weatherapp-configmap-v1
   data:
     CUSTOM_HEADER: 'This app was deployed with helm!'
 
 image:
-  name: devopsjourney1/mywebapp
+  name: shujohns/weather
   tag: latest
